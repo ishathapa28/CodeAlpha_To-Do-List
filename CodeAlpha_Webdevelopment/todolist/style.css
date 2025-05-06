@@ -1,0 +1,121 @@
+body {
+    background-image: url(photos/image.png);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    z-index: -1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    background-color: rgb(240, 240, 240, 0.5);
+    margin: 150px auto 0px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: rgb(93, 132, 87);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.fa-solid {
+    padding-top: 10px;
+    color: rgb(93, 132, 87);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 5px;
+}
+#input-holder {
+    flex: 1;
+    background-color: rgba(240, 240, 240, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(93, 132, 87);
+    cursor: pointer;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 0px 20px 40px;
+    line-height: 30px;
+    
+}
+
+ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f111";
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+ul li.checked .task-text{
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f058";
+    font-weight: 900;
+    color: rgb(93, 132, 87);
+    text-decoration: none;
+}
+
+.cross{
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cross:hover{
+    background: #999;
+    cursor: pointer;
+}
+
+
